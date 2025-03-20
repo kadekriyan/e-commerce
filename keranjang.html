@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Keranjang Belanja</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap-icons-1.8.3/bootstrap-
+icons.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-12 col-lg-6">
+          <img src="assets/img/logo.svg" />
+        </div>
+        <div class="col-12 col-lg-6 text-end">
+          <a class="btn btn-link" href="index.html"> Home</a>
+          <a class="btn btn-link" href="produk.html"> Produk</a>
+          <a
+            class="btn btn-outline-info position-relative"
+            href="keranjang.html"
+          >
+            <i class="bi bi-bag-fill"></i>
+
+            <span
+              class="position-absolute top-0 start-100 translate- middle badge rounded-pill bg-danger"
+            >
+              <span id="jml_item">0</span>
+              <span class="visually-hidden">Produk di keranjang</span>
+            </span>
+          </a>
+
+          <a class="btn btn-outline-primary" href="#" id="masuk"
+            ><i class="bi bi- box-arrow-in-right"></i> Login</a
+          >
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-6 text-center subtitle">
+          <h3>Keranjang Belanja</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <table class="table table-stripped">
+            <thead>
+              <th>No.</th>
+              <th>Produk</th>
+              <th>Jumlah</th>
+              <th>Harga</th>
+              <th>Subtotal</th>
+              <th>Opsi</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="nama_produk">Fuit Tea</td>
+                <td style="width: 6%">
+                  <input type="hidden" name="id_produk" value="1" />
+                  <input
+                    name="jumlah_beli"
+                    type="number"
+                    class="form-control"
+                    value="3"
+                    min="1"
+                  />
+                </td>
+                <td>RP <span class="harga">1000</span></td>
+                <td>RP <span class="subtotal">3000</span></td>
+                <td>
+                  <a class="btn btn-primary updateCart" title="Update">
+                    <i class="bi bi-save-fill"></i>
+                  </a>
+                  <a class="btn btn-danger hapusCart" title="Hapus">
+                    <i class="bi bi-trash-fill"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="nama_produk">Frestea</td>
+                <td style="width: 6%">
+                  <input type="hidden" name="id_produk" value="2" />
+                  <input
+                    name="jumlah_beli"
+                    type="number"
+                    class="form-control"
+                    value="5"
+                    min="1"
+                  />
+                </td>
+                <td>RP <span class="harga">5000</span></td>
+                <td>RP <span class="subtotal">25000</span></td>
+                <td>
+                  <a class="btn btn-primary updateCart" title="Update">
+                    <i class="bi bi-save-fill"></i>
+                  </a>
+
+                  <a class="btn btn-danger hapusCart" title="Hapus">
+                    <i class="bi bi-trash-fill"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="nama_produk">Pocari Sweat</td>
+                <td style="width: 6%">
+                  <input type="hidden" name="id_produk" value="3" />
+                  <input
+                    name="jumlah_beli"
+                    type="number"
+                    class="form-control"
+                    value="2"
+                    min="1"
+                  />
+                </td>
+                <td>RP <span class="harga">7000</span></td>
+                <td>RP <span class="subtotal">21000</span></td>
+                <td>
+                  <a class="btn btn-primary updateCart" title="Update">
+                    <i class="bi bi-save-fill"></i>
+                  </a>
+                  <a class="btn btn-danger hapusCart" title="Hapus">
+                    <i class="bi bi-trash-fill"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/keranjang.js"></script>
+  </body>
+</html>
